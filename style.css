@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .header-container {
@@ -98,6 +99,7 @@ img {
     justify-content: center;
     align-items: center;
     gap: 52px;
+    margin-bottom: 150px;
 }
 
 .main-two-text  {
@@ -117,4 +119,30 @@ img {
   flex-direction: column;
   align-items: center;
   max-width: 200px;
+}
+
+.main-three {
+    background-color: #E5E7EB;
+}
+
+.main-three-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    text-align: left;
+    padding: 200px;
+    margin: 100px;
+}
+
+.quote-credit {
+    text-align: right;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
