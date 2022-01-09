@@ -77,7 +77,7 @@ img {
     background-color: #3882f6;
     border-radius: 10px;
     color: #F9FAF8;
-    padding: 4px;
+    padding: 8px;
     margin-top: 12px;
     width: 100px;
     height: auto;
@@ -85,7 +85,7 @@ img {
     border-style: none;
 }
 
-.header-button:hover {
+.header-button:hover, .footer-button:hover {
     background-color: #255aaf;
 }
 
@@ -143,6 +143,23 @@ img {
 
 .footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background-color: #3882f6;
+    border: solid 1px #3882f6;
+    margin: 200px;
+    padding: 30px;
+    border-radius: 3%;
+}
+
+.footer-button {
+    background-color: #3882f6;
+    border-radius: 10px;
+    color: #F9FAF8;
+    padding: 4px;
+    margin-top: 12px;
+    width: 120px;
+    height: auto;
+    text-align: center;
+    border: 2px solid #F9FAF8;
 }
