@@ -10,16 +10,23 @@
     align-items: center;
     justify-content: space-between;
     background-color: #1F2937;
-    padding: 70px;   
-    padding-left: 100px;
-    padding-right: 100px; 
+    padding: 70px 0;
 }
 
-.header-logo, .main-one-left {
+.header-logo {
     margin-left: 100px;
 }
 
-.header-links, .main-one-right {
+.main-one-left {
+    width: 500px;
+}
+
+.main-one-right img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.header-links {
     margin-right: 100px;
 }
 
@@ -35,7 +42,7 @@ ul {
     display: flex;
     margin: 5px;
     padding: 0;
-    gap: 16px;
+    gap: 12px;
 }
 
 a {
@@ -49,12 +56,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-flow: row nowrap;
-    padding: 70px;
-    padding-top: 100px;
+    flex-flow: row wrap;
+    padding: 70px 100px;
     padding-bottom: 120px;
-    padding-left: 100px;
-    padding-right: 100px; 
     gap: 100px;
 }
 
@@ -96,9 +100,8 @@ img {
 
 .main-two {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
     gap: 52px;
     margin-bottom: 150px;
 }
@@ -132,8 +135,7 @@ img {
     font-weight: lighter;
     color: #1F2937;
     text-align: left;
-    padding: 200px;
-    margin: 100px;
+    padding: 10%;
 }
 
 .quote-credit {
@@ -144,16 +146,15 @@ img {
 
 .footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #3882f6;
     border: solid 1px #3882f6;
-    margin: 200px;
     padding: 30px;
-    border-radius: 1%;
-    margin-left: 500px;
-    margin-right: 500px;
+    border-radius: 10px;
     color: #E5E7EB;
+    max-width: 500px;
+    margin: 100px auto;
 }
 
 .footer-button {
@@ -171,4 +172,11 @@ img {
 .footer-header-text {
     font-size: 22px;
     font-weight: bold;
+}
+
+.footer-cta {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
 }
