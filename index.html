@@ -12,8 +12,8 @@
         <div class="header-logo">Hero</div>
         <div class="header-links">
             <ul>
-                <li><a class="link" href="#">Amazing Locations</a></li>
-                <li><a class="link" href="##">Adorable Pets</a></li>
+                <li><a class="link" href="https://unsplash.com/s/photos/beautiful-places">Amazing Locations</a></li>
+                <li><a class="link" href="https://www.shutterstock.com/search/adorable+pets">Adorable Pets</a></li>
                 <li><a class="link" href="###">About us</a></li>
             </ul>
         </div>
@@ -24,7 +24,7 @@
             <div class="main-one-left-subtext">Discover amazing locations to visit,
                 explore what it feels like to own a pet and find the right one for your
             or check out some amazing quotes!</div>
-            <button class="header-button"><a href="##">Sign Up</a></button>
+            <button class="header-button" onclick="document.getElementById('id01').style.display='block'"> Sign up </button>
         </div>
         <div class="main-one-right"> <img src="images/white-forest.jpg" loading="lazy" alt="white-forest">
         </div>
@@ -32,20 +32,20 @@
     <div class="main-two-info">The Cutest Animals On Earth</div>
     <div class="main-two">
         <div class="main-two-imgs">
-            <a href="#"><img src="images/dog.jpg" height="150x" width="200px" alt="cute dog"></a> 
-            <div class="main-two-text">This is the cutest dog on earth!</div>
+            <img class="imgtwo" src="images/dog.jpg" height="150px" width="200px" alt="cute dog">
+            <div class="main-two-text">This is the cutest dog on earth!!</div>
         </div>
         <div class="main-two-imgs">
-            <a href="#"><img src="images/kitty.jpg" height="150x" width="200px" alt="cute kitty"></a>
-            <div class="main-two-text">This is the cutest kitty in the world!</div>
+            <img class="imgtwo" src="images/kitty.jpg" height="150px" width="200px" alt="cute kitty">
+            <div class="main-two-text">This is the cutest kitty in the world!!</div>
         </div>
         <div class="main-two-imgs">
-            <a href="#"><img src="images/bird.jpg" height="150x" width="200px" alt="cute bird"></a>
-            <div class="main-two-text">This is the cutest bird ever!</div>
+            <img class="imgtwo" src="images/bird.jpg" height="150px" width="200px" alt="cute bird">
+            <div class="main-two-text">This is the cutest bird ever!!</div>
         </div>
         <div class="main-two-imgs">
-            <a href="#"><img src="images/squirrel.jpg" height="150x" width="200px" alt="cute squirrel"></a>
-            <div class="main-two-text">This is the cutest squirrel ever!!</div>
+            <img class="imgtwo" src="images/squirrel.jpg" height="150px" width="200px" alt="cute squirrel">
+            <div class="main-two-text">This is the cutest squirrel in the galaxy!!</div>
         </div>
     </div>
     <div class="main-three">
@@ -62,7 +62,40 @@
         <div class="footer-header-subtext">Sign up for our product by clicking
             that button right over there!</div>
       </div>
-      <button class="footer-button"><a href="##">Sign Up</a></button>
+      <!-- <button class="footer-button"><a href="##">Sign Up</a></button> -->
+
+      <button class="footer-button" onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signup">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
     </div>    
 </body>
 </html>
