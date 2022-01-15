@@ -158,6 +158,12 @@ img {
 
 .main-three {
     background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    max-width: 900px;
 }
 
 .main-three-text {
@@ -339,4 +345,7 @@ footer {
     padding: 30px;
     font-weight: 700;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
